@@ -543,6 +543,7 @@ question=st.selectbox("Select your question",("1. All the videos and the channel
                                               "9. average duration of all videos in each channel",
                                               "10. videos with highest number of comments"))
 
+
 if question=="1. All the videos and the channel name":
     query1='''select title as videos,channel_name as channelname from videos'''
     cursor.execute(query1)
